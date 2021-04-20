@@ -156,6 +156,34 @@
 			font-size:1.375rem;
 			padding-top:1rem;
 		}
+				.modal1,.modalSignInbutton{
+			background: hsla(201.72,80.56%,85.88%,100%);
+			color: hsla(213.49,49.43%,34.12%,100%);
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			justify-items: center;
+			border-radius: 6px;
+			cursor: pointer;
+			padding:1rem 1.5rem;
+			margin-left: auto;
+			margin-right: auto;
+			border: 1px solid hsl(209deg 62% 50%);
+			text-transform: capitalize;
+			text-decoration: none;
+			font-size:1.125rem;
+			line-height:1.125rem;
+			font-weight: bold;
+			white-space: nowrap;
+			transition: all 0.1s ease-out;
+		}
+		.modalform{
+			background: hsla(0.00,0.00%,100.00%,100%);
+			border-radius: 8px;
+			box-shadow: 0 20px 25px -5px rgb(0 0 0 / 10%), 0 10px 10px -5px rgb(0 0 0 / 4%);
+			padding: 2rem;
+		}
 	</style>
   </head>
   <body>
@@ -177,7 +205,7 @@
 				<a class="nav-link" href="#">All Courses</a>
 			</li>
 			<li class="nav-item">
-			<a class="nav-link" href="#">Sign In</a>
+			<a class="nav-link" href="#" data-target="#modalsignIn" data-toggle="modal">Sign In</a>
 			</li>
 			
 			<li class="nav-item">
@@ -187,6 +215,37 @@
 		</div>
 		</div>
 	</nav>
+		<!--signIn Modal-->
+		<div class="modal" id="modalsignIn">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<a href="#" class="modal1">Sign In With Github</a>
+					</div>
+						<span class="text-center" style="color:#c0c0c0;">or with email</span>
+					<div class="modal-body">
+						<form class="modalform">
+							<div class="form-group">
+								<input type="email" name="email" placeholder="Email" class="form-control" required style="border-radius:4px; font-size:1rem;padding:0.75rem;">
+							</div>
+							<div class="form-group">
+								<input type="password" name="password" placeholder="Password" class="form-control" required style="border-radius:4px; font-size:1rem;padding:0.75rem;">
+							</div>
+							<button class="modalSignInbutton" style="background-color:hsl(248deg 100% 60%);color:hsla(0.00,0.00%,100.00%,100%);">Sign In</button>
+							<p style="margin-top:1rem;color:hsla(0.00,55.78%,39.02%,100%);font-weight:400">Having issues signing in?<a href="#" style="color:hsl(248deg 100% 60%);text-decoration:underline;"> Clearing your cookies will resolve it</a></p>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<span>
+							New here?<a href="#" style="color:hsl(248deg 100% 60%);text-decoration:underline;">Sign Up</a>
+						</span>
+						<a href="#" style="margin-left:auto;color:hsl(248deg 100% 60%);text-decoration:underline;">Forgot password?</a>
+					</div>
+				</div>
+			</div>
+		
+		</div>
+	<!--signIn Modal-->
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 htext">
