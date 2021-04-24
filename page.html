@@ -209,7 +209,7 @@
 			</li>
 			
 			<li class="nav-item">
-			<a class="nav-link" href="#">Sign Up</a>
+			<a class="nav-link" href="#" data-target="#modalsignUp" data-toggle="modal">Sign Up</a>
 			</li>
 			</ul>
 		</div>
@@ -246,6 +246,39 @@
 		
 		</div>
 	<!--signIn Modal-->
+		<!--signup modal-->
+	<div class="modal" id="modalsignUp">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<a href="#" class="modal1">Sign In/Up With Github</a>
+					</div>
+						<span class="text-center" style="color:#c0c0c0;">or register with email</span>
+					<div class="modal-body">
+						<form class="modalform">
+							<div class="form-group">
+								<input type="email" name="email" placeholder="Email" class="form-control" required style="border-radius:4px; font-size:1rem;padding:0.75rem;">
+							</div>
+							<div class="form-group">
+								<input type="text" name="name" placeholder="Name" class="form-control" required style="border-radius:4px; font-size:1rem;padding:0.75rem;">
+							</div>
+							<div class="form-group">
+								<input type="password" name="password" placeholder="Password" class="form-control" required style="border-radius:4px; font-size:1rem;padding:0.75rem;">
+							</div>
+							<button class="modalSignInbutton" style="background-color:hsl(248deg 100% 60%);color:hsla(0.00,0.00%,100.00%,100%);">Sign Up</button>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<span>
+							Have an account?<a href="#" style="color:hsl(248deg 100% 60%);text-decoration:underline;">Sign In</a>
+						</span>
+						<a href="#" style="margin-left:auto;color:hsl(248deg 100% 60%);text-decoration:underline;">Forgot password?</a>
+					</div>
+				</div>
+			</div>
+		
+		</div>
+	<!--signup modal-->
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 htext">
